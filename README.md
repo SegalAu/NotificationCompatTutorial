@@ -121,5 +121,19 @@ Steps to Replicate:
      <i>Import new images by right clicking on ```res``` subfolder and selecting ```New``` -> ```Image Asset```. Change ```Icon Type:``` to ```Action Bar and Tab Icons``` and set preferred name. Change ```Asset Type:``` to "Image" and enter the path to your image on your local machine. Progress through the rest of the helper to finish.</i>
   
 
+     <i>To import the image as an icon, declare it in your notification settings with your image name (under ```Drawable```). </i>
+      
+     <b>For Small Icons:</b>
+     
+     ```java
+        .setSmallIcon(R.drawable.<image name>)
+     ```
+     
+     <b>For Large Icons:</b>
+     
+     ```java
+        .setLargeIcon(BitmapFactory.decodeResource(this.getResources(),
+                        <image name>))
+     ```
 
 ![stack Overflow](https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg)
